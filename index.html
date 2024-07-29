@@ -1,78 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Bot Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Bot de Discord</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
-
-    <!-- Header -->
-    <header class="bg-blue-600 text-white py-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-bold">My Discord Bot</h1>
-            <nav>
-                <a href="#features" class="ml-4">Features</a>
-                <a href="#invite" class="ml-4">Invite</a>
-                <a href="#commands" class="ml-4">Commands</a>
-                <a href="#contact" class="ml-4">Contact</a>
-            </nav>
-        </div>
+<body>
+    <header>
+        <h1>Bienvenido al Bot de Discord</h1>
     </header>
-
-    <!-- Main Content -->
-    <main class="container mx-auto py-8">
-        <!-- Introduction -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Welcome to My Discord Bot</h2>
-            <p class="text-lg">This bot helps you manage your server with ease and offers various fun and useful commands.</p>
+    <main>
+        <section id="about">
+            <h2>Sobre el Bot</h2>
+            <p>Este bot de Discord tiene múltiples funcionalidades para mejorar la experiencia en tu servidor.</p>
         </section>
-
-        <!-- Features -->
-        <section id="features" class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Features</h2>
-            <ul class="list-disc list-inside">
-                <li>Automated moderation</li>
-                <li>Fun commands</li>
-                <li>Utility commands</li>
-                <li>Customizable settings</li>
+        <section id="features">
+            <h2>Características</h2>
+            <ul>
+                <li>Lectura de mensajes de texto en un canal de voz</li>
+                <li>Configuración de voces personalizadas</li>
+                <li>Soporte para múltiples idiomas</li>
             </ul>
         </section>
-
-        <!-- Invite Link -->
-        <section id="invite" class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Invite the Bot</h2>
-            <p class="text-lg">Click the button below to invite the bot to your server:</p>
-            <button id="inviteButton" class="bg-blue-600 text-white py-2 px-4 rounded mt-4">Invite Bot</button>
-        </section>
-
-        <!-- Commands -->
-        <section id="commands" class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Commands</h2>
-            <ul class="list-disc list-inside">
-                <li><code>!help</code> - Show this help message</li>
-                <li><code>!kick [user]</code> - Kick a user</li>
-                <li><code>!ban [user]</code> - Ban a user</li>
-                <li><code>!joke</code> - Tell a joke</li>
-                <!-- Add more commands as needed -->
-            </ul>
+        <section id="invite">
+            <h2>Invita al Bot</h2>
+            <p>Haz clic en el siguiente enlace para invitar al bot a tu servidor de Discord:</p>
+            <a href="https://discord.com/oauth2/authorize?client_id=TU_CLIENT_ID&scope=bot&permissions=PERMISOS">Invitar Bot</a>
         </section>
     </main>
-
-    <!-- Footer -->
-    <footer id="contact" class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p>Contact us: <a href="mailto:contact@example.com" class="text-blue-400">contact@example.com</a></p>
-        </div>
+    <footer>
+        <p>&copy; 2024 Bot de Discord. Todos los derechos reservados.</p>
     </footer>
-
-    <script>
-        document.getElementById('inviteButton').addEventListener('click', function() {
-            navigator.clipboard.writeText('https://discord.com/oauth2/authorize?client_id=YOUR_BOT_CLIENT_ID&scope=bot&permissions=YOUR_BOT_PERMISSIONS');
-            alert('Invite link copied to clipboard!');
-        });
-    </script>
-
 </body>
 </html>
